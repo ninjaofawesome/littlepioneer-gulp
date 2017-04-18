@@ -1,0 +1,46 @@
+.more-button,
+.contact-button {
+  @include link-transition(500ms);
+  border-radius: 6px;
+  background: $white;
+  color: $orange;
+  border: 2px solid $orange;
+  padding: 5px 10px;
+  font-weight: 700;
+  font-size: 1.25em;
+  text-transform: uppercase;
+  display: block;
+  margin: 1% auto;
+  width: 200px;
+  &:hover, &:focus, &:active {
+    background: $orange;
+    color: $white;
+    border: 2px solid $white;
+  }
+  &:visited {
+    background: $white;
+    color: $orange;
+    border: 2px solid $orange;
+  }
+  &.tall-space {
+    margin: 2.5% auto;
+  }
+}
+
+.contact-button {
+  width: 250px;
+  background: $blue-green;
+  color: $white;
+  border: 2px solid $blue-green;
+  &:hover, &:focus, &:active {
+    background: $white;
+    color: $blue-green;
+    border: 2px solid $blue-green;
+  }
+  &:visited {
+    background: $blue-green;
+    color: $white;
+    border: 2px solid $blue-green;
+  }
+
+}
