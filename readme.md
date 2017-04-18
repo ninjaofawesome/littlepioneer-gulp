@@ -14,7 +14,7 @@ As it wasn't regularly updated, it was semi-maintainable, but clearly not an ide
 
 ## How do I build this thing?
 
-`npm build`
+`npm run build`
 
 ## How do I deploy it for the world to see?
 
