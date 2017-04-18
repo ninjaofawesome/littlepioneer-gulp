@@ -384,4 +384,113 @@ body {
   height: 200px;
   z-index: 5;
   position: absolute;
-  top: 10%; }
+  top: 5%; }
+
+.gear-list {
+  list-style-type: none;
+  padding: 0 5%;
+  margin: 0;
+  font-weight: 700; }
+
+.gear-box {
+  display: block;
+  margin: 0 auto;
+  width: 400px;
+  height: auto; }
+  @media all and (max-width: 479px) {
+    .gear-box {
+      width: 320px; } }
+
+.g-title {
+  color: #FF9B37;
+  font-size: 1.25em; }
+
+.help-list {
+  list-style-type: none;
+  padding: 0 5%;
+  margin: 0;
+  text-align: justify; }
+
+.help-item {
+  font-weight: 700; }
+
+.artist-box {
+  width: 90%;
+  height: auto;
+  margin: 2.5% 5%;
+  border: 0 !important; }
+  .artist-box .artistimage {
+    height: 200px;
+    width: 200px;
+    border-radius: 100px;
+    display: block;
+    margin: 2.5% auto; }
+  .artist-box .paragraph-box {
+    width: 90%;
+    height: 300px;
+    margin: 5%;
+    position: relative;
+    border: 0 !important; }
+  .artist-box .test-p {
+    text-align: justify; }
+  .artist-box .artistname {
+    color: #FF9B37;
+    font-family: "street_credregular", "Arial Black", "Arial Bold", sans-serif;
+    text-align: center;
+    margin: 0 auto;
+    text-transform: uppercase; }
+    .artist-box .artistname.bg {
+      color: #265E5E; }
+  .artist-box .artistlink {
+    font-family: "street_credregular", "Arial Black", "Arial Bold", sans-serif;
+    color: #FF9B37;
+    text-decoration: none;
+    text-align: center;
+    display: block;
+    margin: 0 auto;
+    text-transform: uppercase;
+    border: 0 !important; }
+    .artist-box .artistlink:hover, .artist-box .artistlink:active, .artist-box .artistlink:focus {
+      color: #AAAA00;
+      text-decoration: none;
+      border: 0 !important; }
+    .artist-box .artistlink:visited {
+      color: #FF9B37;
+      text-decoration: none;
+      border: 0 !important; }
+
+.music-box {
+  display: block;
+  margin: 10px auto;
+  height: 520px; }
+  @media all and (min-width: 1200px) {
+    .music-box {
+      width: 400px; } }
+  @media all and (min-width: 992px) and (max-width: 1199px) {
+    .music-box {
+      width: 385px; } }
+  @media all and (min-width: 768px) and (max-width: 991px) {
+    .music-box {
+      width: 375px; } }
+  @media all and (min-width: 480px) and (max-width: 767px) {
+    .music-box {
+      width: 350px; } }
+  @media all and (max-width: 479px) {
+    .music-box {
+      width: 320px; } }
+
+.playlists {
+  list-style-type: none;
+  padding: 0;
+  margin: 0; }
+  .playlists .playlist {
+    width: 200px;
+    height: 25px;
+    padding: 0;
+    margin: 2px auto; }
+  .playlists .playlist-arrow {
+    color: #FF9B37;
+    text-decoration: none; }
+    .playlists .playlist-arrow:hover, .playlists .playlist-arrow:active, .playlists .playlist-arrow:focus, .playlists .playlist-arrow:visited {
+      color: #FF9B37;
+      text-decoration: none; }

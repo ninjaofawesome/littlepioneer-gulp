@@ -1,0 +1,37 @@
+.gear-list {
+  list-style-type: none;
+  padding: 0 5%;
+  margin: 0;
+  // text-align: justify;
+  font-weight: 700;
+}
+
+.gear-box{
+  display: block;
+  margin: 0 auto;
+  width: 400px;
+  height: auto;
+  @include breakpoint(iphone){
+    width: 320px;
+  }
+}
+
+.g-title {
+  color: $orange;
+  font-size: 1.25em;
+}
+
+.help-list {
+  list-style-type: none;
+  padding: 0 5%;
+  margin: 0;
+  text-align: justify;
+}
+
+.help-item {
+  font-weight: 700;
+}
+
+
+
+
