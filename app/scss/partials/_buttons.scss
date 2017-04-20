@@ -1,3 +1,83 @@
+.button {
+
+  &--more-button,
+  &--contact-button {
+    @include link-transition(500ms);
+    border-radius: 6px;
+    padding: 5px 10px;
+    font-weight: 700;
+    font-size: 1.25em;
+    text-transform: uppercase;
+    display: block;
+    margin: 1% auto;
+    text-align: center;
+
+    &:active,
+    &:focus,
+    &:hover {
+      background: $orange;
+      color: $white;
+      border: 2px solid $white;
+    }
+
+    &:visited {
+      background: $white;
+      color: $orange;
+      border: 2px solid $orange;
+    }
+
+    //TODO, remove
+    &.tall-space {
+      margin: 2.5% auto;
+    }
+  }
+
+  &--contact-button {
+    width: 250px;
+    background: $blue-green;
+    color: $white;
+    border: 2px solid $blue-green;
+
+    &:active,
+    &:focus,
+    &:hover {
+      background: $white;
+      color: $blue-green;
+      border: 2px solid $blue-green;
+    }
+    &:visited {
+      background: $blue-green;
+      color: $white;
+      border: 2px solid $blue-green;
+    }
+  }
+
+  &--more-button {
+    background: $white;
+    color: $orange;
+    border: 2px solid $orange;
+    width: 200px;
+
+    &:active,
+    &:focus,
+    &:hover {
+      background: $orange;
+      color: $white;
+      border: 2px solid $white;
+    }
+    &:visited {
+      background: $white;
+      color: $orange;
+      border: 2px solid $orange;
+    }
+
+    //TODO, remove
+    &.tall-space {
+      margin: 2.5% auto;
+    }
+  }
+}
+
 .more-button,
 .contact-button {
   @include link-transition(500ms);
@@ -25,22 +105,4 @@
   &.tall-space {
     margin: 2.5% auto;
   }
-}
-
-.contact-button {
-  width: 250px;
-  background: $blue-green;
-  color: $white;
-  border: 2px solid $blue-green;
-  &:hover, &:focus, &:active {
-    background: $white;
-    color: $blue-green;
-    border: 2px solid $blue-green;
-  }
-  &:visited {
-    background: $blue-green;
-    color: $white;
-    border: 2px solid $blue-green;
-  }
-
 }

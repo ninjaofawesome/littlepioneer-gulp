@@ -64,11 +64,29 @@ a {
       .logo.hp-logo {
         font-size: 8vw; } }
 
-.recordingcontainer {
+.recording-container {
   width: 75%;
   height: 75px;
   display: block;
   margin: 0 auto; }
+  .recording-container__title {
+    color: #265E5E;
+    font-family: "street_credregular", "Arial Black", "Arial Bold", sans-serif;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 4em; }
+    @media all and (min-width: 992px) and (max-width: 1199px) {
+      .recording-container__title {
+        font-size: 3em; } }
+    @media all and (min-width: 768px) and (max-width: 991px) {
+      .recording-container__title {
+        font-size: 3em; } }
+    @media all and (min-width: 480px) and (max-width: 767px) {
+      .recording-container__title {
+        font-size: 2em; } }
+    @media all and (max-width: 479px) {
+      .recording-container__title {
+        font-size: 2em; } }
 
 .recording {
   color: #265E5E;
@@ -325,6 +343,60 @@ a {
         .page-header__logo-subtitle--gear {
           font-size: 3vw; } }
 
+.button--more-button, .button--contact-button {
+  -webkit-transition: all 500ms ease-out;
+  -moz-transition: all 500ms ease-out;
+  -o-transition: all 500ms ease-out;
+  transition: all 500ms ease-out;
+  border-radius: 6px;
+  padding: 5px 10px;
+  font-weight: 700;
+  font-size: 1.25em;
+  text-transform: uppercase;
+  display: block;
+  margin: 1% auto;
+  text-align: center; }
+  .button--more-button:active, .button--more-button:focus, .button--more-button:hover, .button--contact-button:active, .button--contact-button:focus, .button--contact-button:hover {
+    background: #FF9B37;
+    color: #ffffff;
+    border: 2px solid #ffffff; }
+  .button--more-button:visited, .button--contact-button:visited {
+    background: #ffffff;
+    color: #FF9B37;
+    border: 2px solid #FF9B37; }
+  .button--more-button.tall-space, .button--contact-button.tall-space {
+    margin: 2.5% auto; }
+
+.button--contact-button {
+  width: 250px;
+  background: #265E5E;
+  color: #ffffff;
+  border: 2px solid #265E5E; }
+  .button--contact-button:active, .button--contact-button:focus, .button--contact-button:hover {
+    background: #ffffff;
+    color: #265E5E;
+    border: 2px solid #265E5E; }
+  .button--contact-button:visited {
+    background: #265E5E;
+    color: #ffffff;
+    border: 2px solid #265E5E; }
+
+.button--more-button {
+  background: #ffffff;
+  color: #FF9B37;
+  border: 2px solid #FF9B37;
+  width: 200px; }
+  .button--more-button:active, .button--more-button:focus, .button--more-button:hover {
+    background: #FF9B37;
+    color: #ffffff;
+    border: 2px solid #ffffff; }
+  .button--more-button:visited {
+    background: #ffffff;
+    color: #FF9B37;
+    border: 2px solid #FF9B37; }
+  .button--more-button.tall-space {
+    margin: 2.5% auto; }
+
 .more-button,
 .contact-button {
   -webkit-transition: all 500ms ease-out;
@@ -357,20 +429,6 @@ a {
   .more-button.tall-space,
   .contact-button.tall-space {
     margin: 2.5% auto; }
-
-.contact-button {
-  width: 250px;
-  background: #265E5E;
-  color: #ffffff;
-  border: 2px solid #265E5E; }
-  .contact-button:hover, .contact-button:focus, .contact-button:active {
-    background: #ffffff;
-    color: #265E5E;
-    border: 2px solid #265E5E; }
-  .contact-button:visited {
-    background: #265E5E;
-    color: #ffffff;
-    border: 2px solid #265E5E; }
 
 body,
 html {
