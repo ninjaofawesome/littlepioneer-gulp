@@ -324,7 +324,7 @@ body {
     line-height: 50px;
     position: absolute;
     top: 0;
-    right: 25px; }
+    right: 0.5rem; }
   .custom-navbar__content-list-item {
     display: inline;
     vertical-align: middle;
