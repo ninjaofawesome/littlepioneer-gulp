@@ -1,3 +1,9 @@
+body,
+html {
+  height: 100%;
+  overflow: scroll;
+}
+
 body {
   background: $white;
   color: $gray;
@@ -5,11 +11,18 @@ body {
   font-family: $serif;
 }
 
+
+.container-fluid {
+
+  &--no-pad {
+    padding: 0;
+  }
+}
 .no-pad {
   padding: 0;
 }
 
-.header {
+.custom-navbar {
   position: fixed;
   z-index: 10;
   height: 50px;
@@ -20,18 +33,18 @@ body {
   line-height: 50px;
   vertical-align: middle;
   border-bottom: 1px solid $black;
-}
 
-.custom-navbar{
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  line-height: 50px;
-  position: absolute;
-  top: 0;
-  right: 50px;
+  &__content-list {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    line-height: 50px;
+    position: absolute;
+    top: 0;
+    right: 50px;
+  }
 
-  li{
+  &__content-list-item {
     display: inline;
     color: red;
     vertical-align: middle;
@@ -73,17 +86,6 @@ body {
   margin: 1% 0;
 }
 
-.hannah {
-  position: fixed;
-  bottom: 0;
-  z-index: 10;
-  height:50px;
-  width: 100%;
-  background: $white;
-  .tc {
-    margin-left: 5%;
-  }
-}
 
 
 
