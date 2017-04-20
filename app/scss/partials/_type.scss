@@ -188,17 +188,6 @@ a {
   }
 }
 
-.fa-anch {
-  @include link-transition(500ms);
-  font-size: 1.25em;
-  color: $orange;
-  &:hover,
-  &:active,
-  &:focus {
-    color: $charcoal;
-  }
-}
-
 .address-link {
   @include link-transition(500ms);
   text-decoration: underline;

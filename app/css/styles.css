@@ -211,16 +211,6 @@ a {
   font-size: 2vw;
   text-align: center; }
 
-.fa-anch {
-  -webkit-transition: all 500ms ease-out;
-  -moz-transition: all 500ms ease-out;
-  -o-transition: all 500ms ease-out;
-  transition: all 500ms ease-out;
-  font-size: 1.25em;
-  color: #FF9B37; }
-  .fa-anch:hover, .fa-anch:active, .fa-anch:focus {
-    color: #444444; }
-
 .address-link {
   -webkit-transition: all 500ms ease-out;
   -moz-transition: all 500ms ease-out;
