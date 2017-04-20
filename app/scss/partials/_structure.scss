@@ -41,25 +41,52 @@ body {
     line-height: 50px;
     position: absolute;
     top: 0;
-    right: 50px;
+    right: 25px;
   }
 
   &__content-list-item {
     display: inline;
-    color: red;
     vertical-align: middle;
     text-transform: uppercase;
     padding: 0 2px;
   }
+
+  &__logo-text {
+    padding: 0 1%;
+    margin: 10px 0;
+    vertical-align: inherit;
+    font-family: $disco;
+
+    &--left {
+      color: $orange;
+    }
+
+    &--right {
+      color: $blue-green;
+      margin-left: -0.5rem;
+    }
+  }
+
+  &__social-media-icon {
+    @include link-transition(500ms);
+
+    font-size: 1.25em;
+    color: $orange;
+
+    &:hover,
+    &:active,
+    &:focus {
+      color: $charcoal;
+    }
+
+    &:visited {
+      color: $orange;
+    }
+  }
 }
 
 
-.logo-text {
-  padding: 0 1%;
-  margin: 10px 0;
-  vertical-align: inherit;
-  font-family: $disco;
-}
+
 
 .body-content {
   margin: 50px 0;
