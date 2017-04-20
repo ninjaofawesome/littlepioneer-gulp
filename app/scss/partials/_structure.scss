@@ -17,9 +17,10 @@ body {
   &--no-pad {
     padding: 0;
   }
-}
-.no-pad {
-  padding: 0;
+
+  &--body-content {
+    margin: 50px 0;
+  }
 }
 
 .custom-navbar {
@@ -83,13 +84,6 @@ body {
       color: $orange;
     }
   }
-}
-
-
-
-
-.body-content {
-  margin: 50px 0;
 }
 
 .paragraph-box {

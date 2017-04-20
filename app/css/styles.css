@@ -303,8 +303,8 @@ body {
 .container-fluid--no-pad {
   padding: 0; }
 
-.no-pad {
-  padding: 0; }
+.container-fluid--body-content {
+  margin: 50px 0; }
 
 .custom-navbar {
   position: fixed;
@@ -351,9 +351,6 @@ body {
       color: #444444; }
     .custom-navbar__social-media-icon:visited {
       color: #FF9B37; }
-
-.body-content {
-  margin: 50px 0; }
 
 .paragraph-box {
   width: 100%;
