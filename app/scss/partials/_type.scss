@@ -34,6 +34,19 @@ a {
   color: $orange;
 }
 
+.type-treatment {
+
+  &__subtitle {
+    color: $blue-green;
+    text-transform: uppercase;
+    text-align: center;
+  }
+
+  &--bluegreen {
+    color: $blue-green;
+  }
+}
+
 .bluegreen {
   color: $blue-green;
 }
@@ -129,18 +142,6 @@ a {
       font-size: 4vw;
       padding: 0 5%;
     }
-    &__hp-logo {
-      position: inherit;
-      bottom: 5%;
-      @include breakpoint(mobile){
-        font-size: 3vw;
-        padding: 0 5%;
-      }
-      @include breakpoint(iphone){
-        font-size: 3vw;
-        padding: 0 5%;
-      }
-    }
   }
 }
 
@@ -177,14 +178,6 @@ a {
         padding: 0 5%;
       }
     }
-  }
-}
-
-.subtitle {
-  &__vw {
-    color: $orange;
-    font-size: 2vw;
-    text-align: center;
   }
 }
 
