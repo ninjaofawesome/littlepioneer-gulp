@@ -11,8 +11,6 @@ var del = require('del');
 var runSequence = require('run-sequence');
 var ghPages = require('gulp-gh-pages');
 
-
-
 gulp.task('compile', function(){
   return gulp.src('app/*.html')
     .pipe(useref())
