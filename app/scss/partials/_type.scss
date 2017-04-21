@@ -30,14 +30,18 @@ a {
   }
 }
 
-.orange {
-  color: $orange;
-}
-
 .type-treatment {
 
   &--title-bg {
     color: $blue-green;
+    font-family: $disco;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 700%;
+  }
+
+  &--title-orange {
+    color: $orange;
     font-family: $disco;
     text-transform: uppercase;
     text-align: center;
@@ -119,48 +123,6 @@ a {
   }
 }
 
-.bluegreen {
-  color: $blue-green;
-}
-
-.top-space{
-  margin-top: 5%;
-}
-
-.padded {
-  padding: 0 2%;
-}
-
-
-.logo {
-  color: $orange;
-  font-family: $disco;
-  text-transform: uppercase;
-  text-align: center;
-  font-size: 10vw;
-  @include breakpoint(mobile){
-    font-size: 12vw;
-  }
-  @include breakpoint(iphone){
-    font-size: 12vw;
-  }
-  &.record {
-    color: $blue-green;
-  }
-
-  &.hp-logo {
-    font-size: 8vw;
-    @include breakpoint(mobile){
-      font-size: 8vw;
-    }
-    @include breakpoint(iphone){
-      font-size: 8vw;
-    }
-
-  }
-
-}
-
 .recording-container {
   width: 75%;
   height: 75px;
@@ -188,88 +150,6 @@ a {
 
     @include breakpoint(iphone){
       font-size: 2em;
-    }
-  }
-}
-
-.recording {
-  color: $blue-green;
-  font-family: $disco;
-  text-transform: uppercase;
-  text-align: center;
-  font-size: 4em;
-  @include breakpoint(desktop){
-    font-size: 3em;
-  }
-  @include breakpoint(tablet){
-    font-size: 3em;
-  }
-  @include breakpoint(mobile){
-    font-size: 2em;
-  }
-  @include breakpoint(iphone){
-    font-size: 2em;
-  }
-
-}
-
-.subtitle,
-.section-title {
-  color: $blue-green;
-  text-transform: uppercase;
-  text-align: center;
-
-  &.listen{
-    margin-bottom: 10px;
-  }
-
-  &.logo-box {
-    font-size: 2vw;
-    position: inherit;
-    bottom: 0;
-    @include breakpoint(mobile){
-      font-size: 4vw;
-      padding: 0 5%;
-    }
-    @include breakpoint(iphone){
-      font-size: 4vw;
-      padding: 0 5%;
-    }
-  }
-}
-
-.subtitle--orange {
-  color: $orange;
-  text-transform: uppercase;
-  text-align: center;
-
-  &.listen{
-    margin-bottom: 10px;
-  }
-
-  &.logo-box {
-    font-size: 2vw;
-    position: inherit;
-    bottom: 0;
-    @include breakpoint(mobile){
-      font-size: 4vw;
-      padding: 0 5%;
-    }
-    @include breakpoint(iphone){
-      font-size: 4vw;
-      padding: 0 5%;
-    }
-    &__hp-logo {
-      position: inherit;
-      bottom: 5%;
-      @include breakpoint(mobile){
-        font-size: 3vw;
-        padding: 0 5%;
-      }
-      @include breakpoint(iphone){
-        font-size: 3vw;
-        padding: 0 5%;
-      }
     }
   }
 }

@@ -18,9 +18,6 @@ a {
     color: #265E5E;
     text-decoration: underline; }
 
-.orange {
-  color: #FF9B37; }
-
 .type-treatment--title-bg {
   color: #265E5E;
   font-family: "street_credregular", "Arial Black", "Arial Bold", sans-serif;
@@ -28,8 +25,20 @@ a {
   text-align: center;
   font-size: 700%; }
 
+.type-treatment--title-orange {
+  color: #FF9B37;
+  font-family: "street_credregular", "Arial Black", "Arial Bold", sans-serif;
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 700%; }
+
 .type-treatment--subtitle {
   color: #265E5E;
+  text-transform: uppercase;
+  text-align: center; }
+
+.type-treatment--subtitle-orange {
+  color: #FF9B37;
   text-transform: uppercase;
   text-align: center; }
 
@@ -78,38 +87,6 @@ a {
   .link--address-link:visted {
     color: #265E5E; }
 
-.bluegreen {
-  color: #265E5E; }
-
-.top-space {
-  margin-top: 5%; }
-
-.padded {
-  padding: 0 2%; }
-
-.logo {
-  color: #FF9B37;
-  font-family: "street_credregular", "Arial Black", "Arial Bold", sans-serif;
-  text-transform: uppercase;
-  text-align: center;
-  font-size: 10vw; }
-  @media all and (min-width: 480px) and (max-width: 767px) {
-    .logo {
-      font-size: 12vw; } }
-  @media all and (max-width: 479px) {
-    .logo {
-      font-size: 12vw; } }
-  .logo.record {
-    color: #265E5E; }
-  .logo.hp-logo {
-    font-size: 8vw; }
-    @media all and (min-width: 480px) and (max-width: 767px) {
-      .logo.hp-logo {
-        font-size: 8vw; } }
-    @media all and (max-width: 479px) {
-      .logo.hp-logo {
-        font-size: 8vw; } }
-
 .recording-container {
   width: 75%;
   height: 75px;
@@ -133,110 +110,6 @@ a {
     @media all and (max-width: 479px) {
       .recording-container__title {
         font-size: 2em; } }
-
-.recording {
-  color: #265E5E;
-  font-family: "street_credregular", "Arial Black", "Arial Bold", sans-serif;
-  text-transform: uppercase;
-  text-align: center;
-  font-size: 4em; }
-  @media all and (min-width: 992px) and (max-width: 1199px) {
-    .recording {
-      font-size: 3em; } }
-  @media all and (min-width: 768px) and (max-width: 991px) {
-    .recording {
-      font-size: 3em; } }
-  @media all and (min-width: 480px) and (max-width: 767px) {
-    .recording {
-      font-size: 2em; } }
-  @media all and (max-width: 479px) {
-    .recording {
-      font-size: 2em; } }
-
-.subtitle,
-.section-title {
-  color: #265E5E;
-  text-transform: uppercase;
-  text-align: center; }
-  .subtitle.listen,
-  .section-title.listen {
-    margin-bottom: 10px; }
-  .subtitle.logo-box,
-  .section-title.logo-box {
-    font-size: 2vw;
-    position: inherit;
-    bottom: 0; }
-    @media all and (min-width: 480px) and (max-width: 767px) {
-      .subtitle.logo-box,
-      .section-title.logo-box {
-        font-size: 4vw;
-        padding: 0 5%; } }
-    @media all and (max-width: 479px) {
-      .subtitle.logo-box,
-      .section-title.logo-box {
-        font-size: 4vw;
-        padding: 0 5%; } }
-
-.subtitle--orange {
-  color: #FF9B37;
-  text-transform: uppercase;
-  text-align: center; }
-  .subtitle--orange.listen {
-    margin-bottom: 10px; }
-  .subtitle--orange.logo-box {
-    font-size: 2vw;
-    position: inherit;
-    bottom: 0; }
-    @media all and (min-width: 480px) and (max-width: 767px) {
-      .subtitle--orange.logo-box {
-        font-size: 4vw;
-        padding: 0 5%; } }
-    @media all and (max-width: 479px) {
-      .subtitle--orange.logo-box {
-        font-size: 4vw;
-        padding: 0 5%; } }
-    .subtitle--orange.logo-box__hp-logo {
-      position: inherit;
-      bottom: 5%; }
-      @media all and (min-width: 480px) and (max-width: 767px) {
-        .subtitle--orange.logo-box__hp-logo {
-          font-size: 3vw;
-          padding: 0 5%; } }
-      @media all and (max-width: 479px) {
-        .subtitle--orange.logo-box__hp-logo {
-          font-size: 3vw;
-          padding: 0 5%; } }
-
-.address-link {
-  -webkit-transition: all 500ms ease-out;
-  -moz-transition: all 500ms ease-out;
-  -o-transition: all 500ms ease-out;
-  transition: all 500ms ease-out;
-  text-decoration: underline;
-  font-weight: 700; }
-  .address-link:hover, .address-link:active, .address-link:focus {
-    color: #444444; }
-  .address-link:visted {
-    color: #265E5E; }
-
-.p-pad {
-  padding: 0 5%; }
-  .p-pad.large {
-    padding: 0 2.5%; }
-
-.bold {
-  font-weight: 700; }
-
-.title {
-  color: #ffffff;
-  font-family: "street_credregular", "Arial Black", "Arial Bold", sans-serif;
-  text-transform: uppercase;
-  text-align: center;
-  font-size: 700%; }
-  .title.bg {
-    color: #265E5E; }
-  .title.orange {
-    color: #FF9B37; }
 
 .images--collaborate-img {
   width: 400px;
@@ -635,38 +508,40 @@ body {
       text-decoration: none;
       border: 0 !important; }
 
-.music-box {
+.listen-page__playlist-group {
+  list-style-type: none;
+  padding: 0;
+  margin: 0; }
+
+.listen-page__playlist-group-item {
+  width: 200px;
+  height: 25px;
+  padding: 0;
+  margin: 2px auto; }
+
+.listen-page__playlist-group-item-arrow {
+  color: #FF9B37;
+  text-decoration: none; }
+  .listen-page__playlist-group-item-arrow:active, .listen-page__playlist-group-item-arrow:focus, .listen-page__playlist-group-item-arrow:hover, .listen-page__playlist-group-item-arrow:visited {
+    color: #FF9B37;
+    text-decoration: none; }
+
+.listen-page__music-box {
   display: block;
   margin: 10px auto;
   height: 520px; }
   @media all and (min-width: 1200px) {
-    .music-box {
+    .listen-page__music-box {
       width: 400px; } }
   @media all and (min-width: 992px) and (max-width: 1199px) {
-    .music-box {
+    .listen-page__music-box {
       width: 385px; } }
   @media all and (min-width: 768px) and (max-width: 991px) {
-    .music-box {
+    .listen-page__music-box {
       width: 375px; } }
   @media all and (min-width: 480px) and (max-width: 767px) {
-    .music-box {
+    .listen-page__music-box {
       width: 350px; } }
   @media all and (max-width: 479px) {
-    .music-box {
+    .listen-page__music-box {
       width: 320px; } }
-
-.playlists {
-  list-style-type: none;
-  padding: 0;
-  margin: 0; }
-  .playlists .playlist {
-    width: 200px;
-    height: 25px;
-    padding: 0;
-    margin: 2px auto; }
-  .playlists .playlist-arrow {
-    color: #FF9B37;
-    text-decoration: none; }
-    .playlists .playlist-arrow:hover, .playlists .playlist-arrow:active, .playlists .playlist-arrow:focus, .playlists .playlist-arrow:visited {
-      color: #FF9B37;
-      text-decoration: none; }

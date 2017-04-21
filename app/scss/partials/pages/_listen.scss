@@ -1,44 +1,50 @@
-.music-box {
-  display: block;
-  margin: 10px auto;
-  height: 520px;
-  @include breakpoint(large){
-    width:400px;
-  }
-  @include breakpoint(desktop){
-    width: 385px;
-  }
-  @include breakpoint(tablet){
-    width: 375px;
-  }
-  @include breakpoint(mobile){
-    width: 350px;
-  }
-  @include breakpoint(iphone){
-    width: 320px;
+.listen-page {
+
+  &__playlist-group {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
   }
 
-
-}
-
-.playlists {
-  list-style-type: none;
-  padding: 0;
-  margin: 0;
-  .playlist {
+  &__playlist-group-item {
     width: 200px;
     height: 25px;
     padding: 0;
     margin: 2px auto;
   }
-  .playlist-arrow {
+
+  &__playlist-group-item-arrow {
     color: $orange;
     text-decoration: none;
-    &:hover, &:active, &:focus, &:visited {
+
+    &:active,
+    &:focus,
+    &:hover,
+    &:visited {
       color: $orange;
       text-decoration: none;
     }
   }
+
+  &__music-box {
+    display: block;
+    margin: 10px auto;
+    height: 520px;
+
+    @include breakpoint(large){
+      width:400px;
+    }
+    @include breakpoint(desktop){
+      width: 385px;
+    }
+    @include breakpoint(tablet){
+      width: 375px;
+    }
+    @include breakpoint(mobile){
+      width: 350px;
+    }
+    @include breakpoint(iphone){
+      width: 320px;
+    }
+  }
 }
-
-
