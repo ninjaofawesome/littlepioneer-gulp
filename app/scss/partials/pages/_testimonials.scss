@@ -1,43 +1,26 @@
-.artist-box {
+.artist-testimonial {
   width: 90%;
   height: auto;
   margin: 2.5% 5%;
   border: 0 !important;
 
-  .artistimage {
+  &__image {
     height: 200px;
     width: 200px;
     border-radius: 100px;
     display: block;
     margin: 2.5% auto;
-
   }
 
-  .paragraph-box {
-    width: 90%;
-    height: 300px;
-    margin: 5%;
-    position: relative;
-    border: 0 !important;
-  }
-
-  .test-p {
-    text-align: justify;
-
-  }
-
-  .artistname {
-    color: $orange;
+  &__name {
+    color: $blue-green;
     font-family: $disco;
     text-align: center;
     margin: 0 auto;
     text-transform: uppercase;
-    &.bg {
-      color: $blue-green;
-    }
   }
 
-  .artistlink{
+  &__artist-link{
     font-family: $disco;
     color: $orange;
     text-decoration: none;
@@ -46,17 +29,31 @@
     margin: 0 auto;
     text-transform: uppercase;
     border: 0 !important;
-    &:hover, &:active, &:focus {
+
+    &:active,
+    &:focus,
+    &:hover {
       color: $gold;
       text-decoration: none;
       border: 0 !important;
     }
+
     &:visited {
       color: $orange;
       text-decoration: none;
       border: 0 !important;
     }
   }
+
+  &__testimonial-container {
+    width: 90%;
+    height: 300px;
+    margin: 5%;
+    position: relative;
+    border: 0 !important;
+  }
+
+  &__testimonial {
+    text-align: justify;
+  }
 }
-
-

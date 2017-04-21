@@ -446,34 +446,24 @@ body {
   padding: 0 5%;
   margin: 0; }
 
-.artist-box {
+.artist-testimonial {
   width: 90%;
   height: auto;
   margin: 2.5% 5%;
   border: 0 !important; }
-  .artist-box .artistimage {
+  .artist-testimonial__image {
     height: 200px;
     width: 200px;
     border-radius: 100px;
     display: block;
     margin: 2.5% auto; }
-  .artist-box .paragraph-box {
-    width: 90%;
-    height: 300px;
-    margin: 5%;
-    position: relative;
-    border: 0 !important; }
-  .artist-box .test-p {
-    text-align: justify; }
-  .artist-box .artistname {
-    color: #FF9B37;
+  .artist-testimonial__name {
+    color: #265E5E;
     font-family: "street_credregular", "Arial Black", "Arial Bold", sans-serif;
     text-align: center;
     margin: 0 auto;
     text-transform: uppercase; }
-    .artist-box .artistname.bg {
-      color: #265E5E; }
-  .artist-box .artistlink {
+  .artist-testimonial__artist-link {
     font-family: "street_credregular", "Arial Black", "Arial Bold", sans-serif;
     color: #FF9B37;
     text-decoration: none;
@@ -482,14 +472,22 @@ body {
     margin: 0 auto;
     text-transform: uppercase;
     border: 0 !important; }
-    .artist-box .artistlink:hover, .artist-box .artistlink:active, .artist-box .artistlink:focus {
+    .artist-testimonial__artist-link:active, .artist-testimonial__artist-link:focus, .artist-testimonial__artist-link:hover {
       color: #AAAA00;
       text-decoration: none;
       border: 0 !important; }
-    .artist-box .artistlink:visited {
+    .artist-testimonial__artist-link:visited {
       color: #FF9B37;
       text-decoration: none;
       border: 0 !important; }
+  .artist-testimonial__testimonial-container {
+    width: 90%;
+    height: 300px;
+    margin: 5%;
+    position: relative;
+    border: 0 !important; }
+  .artist-testimonial__testimonial {
+    text-align: justify; }
 
 .listen-page__playlist-group {
   list-style-type: none;
