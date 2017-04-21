@@ -45,6 +45,61 @@ a {
   &--bluegreen {
     color: $blue-green;
   }
+
+  &--recording-title {
+    color: $blue-green;
+    font-family: $disco;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 10vw;
+
+    @include breakpoint(mobile){
+      font-size: 12vw;
+    }
+
+    @include breakpoint(iphone){
+      font-size: 12vw;
+    }
+  }
+
+  &--centered {
+    text-align: center;
+  }
+
+  &--bold-type {
+    font-weight: 700;
+  }
+
+  &--orange-highlight {
+    color: $orange;
+    font-weight: 700;
+  }
+}
+
+.link {
+
+  &--bold-link {
+    font-weight: 700;
+  }
+
+  &--address-link {
+    @include link-transition(500ms);
+
+    text-decoration: underline;
+    font-weight: 700;
+
+    &:hover,
+    &:active,
+    &:focus {
+      color: $charcoal;
+    }
+
+    &:visted {
+      color: $blue-green;
+    }
+  }
+
+
 }
 
 .bluegreen {
@@ -59,9 +114,6 @@ a {
   padding: 0 2%;
 }
 
-.centered {
-  text-align: center;
-}
 
 .logo {
   color: $orange;

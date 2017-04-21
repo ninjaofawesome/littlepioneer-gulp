@@ -29,6 +29,44 @@ a {
 .type-treatment--bluegreen {
   color: #265E5E; }
 
+.type-treatment--recording-title {
+  color: #265E5E;
+  font-family: "street_credregular", "Arial Black", "Arial Bold", sans-serif;
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 10vw; }
+  @media all and (min-width: 480px) and (max-width: 767px) {
+    .type-treatment--recording-title {
+      font-size: 12vw; } }
+  @media all and (max-width: 479px) {
+    .type-treatment--recording-title {
+      font-size: 12vw; } }
+
+.type-treatment--centered {
+  text-align: center; }
+
+.type-treatment--bold-type {
+  font-weight: 700; }
+
+.type-treatment--orange-highlight {
+  color: #FF9B37;
+  font-weight: 700; }
+
+.link--bold-link {
+  font-weight: 700; }
+
+.link--address-link {
+  -webkit-transition: all 500ms ease-out;
+  -moz-transition: all 500ms ease-out;
+  -o-transition: all 500ms ease-out;
+  transition: all 500ms ease-out;
+  text-decoration: underline;
+  font-weight: 700; }
+  .link--address-link:hover, .link--address-link:active, .link--address-link:focus {
+    color: #444444; }
+  .link--address-link:visted {
+    color: #265E5E; }
+
 .bluegreen {
   color: #265E5E; }
 
@@ -37,9 +75,6 @@ a {
 
 .padded {
   padding: 0 2%; }
-
-.centered {
-  text-align: center; }
 
 .logo {
   color: #FF9B37;
