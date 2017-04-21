@@ -1,0 +1,14 @@
+.index-page {
+
+  &__cta-title {
+    color: $blue-green;
+    text-transform: uppercase;
+    text-align: center;
+  }
+
+  //TODO: Flexbox!
+  &__paragraph-box {
+    width: 100%;
+    height: 150px;
+  }
+}

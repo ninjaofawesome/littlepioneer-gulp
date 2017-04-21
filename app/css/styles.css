@@ -528,10 +528,6 @@ body {
     .custom-navbar__social-media-icon:visited {
       color: #FF9B37; }
 
-.paragraph-box {
-  width: 100%;
-  height: 150px; }
-
 .email {
   height: 50px;
   width: 50px;
@@ -544,6 +540,15 @@ body {
   height: 1px;
   background: #CCCCCC;
   margin: 1% 0; }
+
+.index-page__cta-title {
+  color: #265E5E;
+  text-transform: uppercase;
+  text-align: center; }
+
+.index-page__paragraph-box {
+  width: 100%;
+  height: 150px; }
 
 .gear-list {
   list-style-type: none;
