@@ -50,6 +50,12 @@ a {
     text-align: center;
   }
 
+  &--subtitle-orange {
+    color: $orange;
+    text-transform: uppercase;
+    text-align: center;
+  }
+
   &--bluegreen {
     color: $blue-green;
   }
@@ -267,53 +273,3 @@ a {
     }
   }
 }
-
-.address-link {
-  @include link-transition(500ms);
-  text-decoration: underline;
-  font-weight: 700;
-  &:hover,
-  &:active,
-  &:focus {
-    color: $charcoal;
-  }
-
-  &:visted {
-    color: $blue-green;
-  }
-
-}
-
-.p-pad {
-  padding: 0 5%;
-  &.large {
-    padding: 0 2.5%;
-  }
-}
-
-.bold {
-  font-weight: 700;
-}
-
-.title {
-  color: $white;
-  font-family: $disco;
-  text-transform: uppercase;
-  text-align: center;
-  font-size: 700%;
-  &.bg {
-    color: $blue-green;
-  }
-  &.orange {
-    color: $orange;
-  }
-}
-
-
-
-
-
-
-
-
-
