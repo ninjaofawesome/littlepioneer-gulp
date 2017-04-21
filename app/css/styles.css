@@ -576,24 +576,19 @@ body {
   margin: 0;
   text-align: justify; }
 
-.gear-list {
-  list-style-type: none;
-  padding: 0 5%;
-  margin: 0;
-  font-weight: 700; }
-
-.gear-box {
+.gear-page__list-container {
   display: block;
   margin: 0 auto;
   width: 400px;
   height: auto; }
   @media all and (max-width: 479px) {
-    .gear-box {
+    .gear-page__list-container {
       width: 320px; } }
 
-.g-title {
-  color: #FF9B37;
-  font-size: 1.25em; }
+.gear-page__gear-list {
+  list-style-type: none;
+  padding: 0 5%;
+  margin: 0; }
 
 .artist-box {
   width: 90%;

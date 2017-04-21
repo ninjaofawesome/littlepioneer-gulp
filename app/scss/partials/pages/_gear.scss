@@ -1,21 +1,19 @@
-.gear-list {
-  list-style-type: none;
-  padding: 0 5%;
-  margin: 0;
-  font-weight: 700;
-}
+.gear-page {
 
-.gear-box{
-  display: block;
-  margin: 0 auto;
-  width: 400px;
-  height: auto;
-  @include breakpoint(iphone){
-    width: 320px;
+  &__list-container {
+    display: block;
+    margin: 0 auto;
+    width: 400px;
+    height: auto;
+
+    @include breakpoint(iphone){
+      width: 320px;
+    }
   }
-}
 
-.g-title {
-  color: $orange;
-  font-size: 1.25em;
+  &__gear-list {
+    list-style-type: none;
+    padding: 0 5%;
+    margin: 0;
+  }
 }
