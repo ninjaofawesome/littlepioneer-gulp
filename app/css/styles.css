@@ -316,8 +316,14 @@ body {
   font-size: 16px;
   font-family: Candara, Calibri, Segoe, "Segoe UI", Optima, Arial, sans-serif; }
 
-.container-fluid--no-pad {
-  padding: 0; }
+.container-fluid--navbar {
+  max-width: 75rem;
+  margin-right: auto;
+  margin-left: auto;
+  display: flex;
+  flex-flow: row wrap;
+  padding: 0;
+  margin: 0; }
 
 .container-fluid--body-content {
   margin: 50px 0; }

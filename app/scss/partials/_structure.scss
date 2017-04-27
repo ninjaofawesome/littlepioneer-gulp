@@ -14,8 +14,11 @@ body {
 
 .container-fluid {
 
-  &--no-pad {
+  &--navbar {
+    @include flex-grid-row();
+
     padding: 0;
+    margin: 0;
   }
 
   &--body-content {
