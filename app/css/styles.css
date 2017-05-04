@@ -11,6 +11,14 @@
   src: url("../fonts/street-cred/street_cred-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/street-cred/street_cred-webfont.woff") format("woff"), url("../fonts/street-cred/street_cred-webfont.woff2") format("woff2"), url("../fonts/street-cred/street_cred-webfont.ttf") format("truetype"), url("../fonts/street-cred/street_cred-webfont.svg#svgFontName") format("svg");
   /* Legacy iOS */ }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0; }
+
 p {
   text-align: justify; }
 
@@ -144,107 +152,131 @@ a {
       width: 250px; } }
 
 .page-header {
-  flex: 0 0 100%;
-  max-width: 100%;
-  padding-right: 0;
-  padding-left: 0;
-  max-width: 100%;
+  width: 100%;
   position: relative;
   margin-top: 0; }
   .page-header__background-poster {
     background-image: url("https://res.cloudinary.com/ninjaofawesome/image/upload/v1492131750/littlepioneer/img4.jpg");
     background-repeat: no-repeat;
     background-size: cover;
-    height: 350px;
+    height: 21.875rem;
     opacity: 0.50;
     filter: alpha(opacity=50); }
-    @media all and (min-width: 480px) and (max-width: 767px) {
-      .page-header__background-poster {
-        height: 250px; } }
-    @media all and (max-width: 479px) {
-      .page-header__background-poster {
-        height: 225px; } }
   .page-header__logo-box {
-    width: 100%;
-    height: 200px;
+    width: 99%;
+    display: block;
+    margin: 0 auto;
     z-index: 5;
     position: absolute;
-    top: 5%; }
+    top: 6.25rem; }
+    @media all and (min-width: 480px) and (max-width: 767px) {
+      .page-header__logo-box {
+        top: 5.3125rem; } }
+    @media all and (max-width: 479px) {
+      .page-header__logo-box {
+        top: 7.1875rem; } }
   .page-header__logo-title {
     color: #FF9B37;
     font-family: "street_credregular", "Arial Black", "Arial Bold", sans-serif;
     text-transform: uppercase;
     text-align: center;
-    font-size: 10vw; }
-    @media all and (min-width: 480px) and (max-width: 767px) {
-      .page-header__logo-title {
-        font-size: 12vw; } }
-    @media all and (max-width: 479px) {
-      .page-header__logo-title {
-        font-size: 12vw; } }
+    font-size: 10vw;
+    line-height: calc(10vw * 0.785);
+    font-weight: 400; }
     .page-header__logo-title--hp-logo {
       color: #FF9B37;
       font-family: "street_credregular", "Arial Black", "Arial Bold", sans-serif;
       text-transform: uppercase;
       text-align: center;
-      font-size: 8vw; }
-      @media all and (min-width: 992px) and (max-width: 1199px) {
-        .page-header__logo-title--hp-logo {
-          padding-top: 5%; } }
-      @media all and (min-width: 768px) and (max-width: 991px) {
-        .page-header__logo-title--hp-logo {
-          padding-top: 10%; } }
+      font-size: 8.5vw;
+      line-height: calc(8.5vw * 0.785);
+      font-weight: 400; }
       @media all and (min-width: 480px) and (max-width: 767px) {
         .page-header__logo-title--hp-logo {
-          font-size: 8vw;
-          padding-top: 12.5%; } }
+          color: #FF9B37;
+          font-family: "street_credregular", "Arial Black", "Arial Bold", sans-serif;
+          text-transform: uppercase;
+          text-align: center;
+          font-size: 16vw;
+          line-height: calc(16vw * 0.785);
+          font-weight: 400; } }
       @media all and (max-width: 479px) {
         .page-header__logo-title--hp-logo {
-          font-size: 8vw;
-          padding-top: 15%; } }
+          color: #FF9B37;
+          font-family: "street_credregular", "Arial Black", "Arial Bold", sans-serif;
+          text-transform: uppercase;
+          text-align: center;
+          font-size: 16vw;
+          line-height: calc(16vw * 0.785);
+          font-weight: 400; } }
     .page-header__logo-title--gear-logo {
       color: #FF9B37;
       font-family: "street_credregular", "Arial Black", "Arial Bold", sans-serif;
       text-transform: uppercase;
       text-align: center;
-      font-size: 8vw; }
-      @media all and (min-width: 992px) and (max-width: 1199px) {
-        .page-header__logo-title--gear-logo {
-          font-size: 10vw; } }
-      @media all and (min-width: 768px) and (max-width: 991px) {
-        .page-header__logo-title--gear-logo {
-          padding-top: 5%;
-          font-size: 12vw; } }
-      @media all and (min-width: 480px) and (max-width: 767px) {
-        .page-header__logo-title--gear-logo {
-          font-size: 12vw; } }
-      @media all and (max-width: 479px) {
-        .page-header__logo-title--gear-logo {
-          font-size: 12vw; } }
+      font-size: 8.5vw;
+      line-height: calc(8.5vw * 0.785);
+      font-weight: 400; }
   .page-header__logo-subtitle {
     color: #265E5E;
+    font-family: Candara, Calibri, Segoe, "Segoe UI", Optima, Arial, sans-serif;
     text-transform: uppercase;
     text-align: center;
-    position: inherit;
-    bottom: 5%; }
+    font-size: 2vw;
+    line-height: calc(2vw * 1.05);
+    font-weight: 500;
+    margin-top: 1.25rem; }
+    @media all and (min-width: 768px) and (max-width: 991px) {
+      .page-header__logo-subtitle {
+        color: 2.5vw;
+        font-family: Candara, Calibri, Segoe, "Segoe UI", Optima, Arial, sans-serif;
+        text-transform: uppercase;
+        text-align: center;
+        font-size: 20px;
+        line-height: 23px;
+        margin-top: 0.78125rem; } }
     @media all and (min-width: 480px) and (max-width: 767px) {
       .page-header__logo-subtitle {
-        font-size: 3vw;
-        padding: 0 5%; } }
+        color: 3vw;
+        font-family: Candara, Calibri, Segoe, "Segoe UI", Optima, Arial, sans-serif;
+        text-transform: uppercase;
+        text-align: center;
+        font-size: 20px;
+        line-height: 23px;
+        margin-top: 0.625rem; } }
     @media all and (max-width: 479px) {
       .page-header__logo-subtitle {
-        font-size: 3vw;
-        padding: 0 5%; } }
+        color: 1vw;
+        font-family: Candara, Calibri, Segoe, "Segoe UI", Optima, Arial, sans-serif;
+        text-transform: uppercase;
+        text-align: center;
+        font-size: 20px;
+        line-height: 23px;
+        margin-top: 0.46875rem; } }
     .page-header__logo-subtitle--established {
       color: #FF9B37;
+      font-family: Candara, Calibri, Segoe, "Segoe UI", Optima, Arial, sans-serif;
+      text-transform: uppercase;
+      text-align: center;
       font-size: 2vw;
-      text-align: center; }
+      line-height: calc(2vw * 1.05);
+      font-weight: 500; }
       @media all and (min-width: 480px) and (max-width: 767px) {
         .page-header__logo-subtitle--established {
-          font-size: 3vw; } }
+          color: 3vw;
+          font-family: Candara, Calibri, Segoe, "Segoe UI", Optima, Arial, sans-serif;
+          text-transform: uppercase;
+          text-align: center;
+          font-size: 20px;
+          line-height: 23px; } }
       @media all and (max-width: 479px) {
         .page-header__logo-subtitle--established {
-          font-size: 3vw; } }
+          color: 1vw;
+          font-family: Candara, Calibri, Segoe, "Segoe UI", Optima, Arial, sans-serif;
+          text-transform: uppercase;
+          text-align: center;
+          font-size: 20px;
+          line-height: 23px; } }
     .page-header__logo-subtitle--gear {
       margin-top: 0;
       padding-left: 5%;
@@ -313,7 +345,8 @@ a {
 body,
 html {
   height: 100%;
-  overflow: scroll; }
+  overflow: scroll;
+  margin: 0; }
 
 body {
   background: #ffffff;
@@ -331,14 +364,13 @@ body {
   margin: 0; }
 
 .container-fluid--body-content {
-  width: 100%;
   padding: 0;
-  margin: 3.125rem 0; }
+  margin: 3.125rem 0 0 0; }
 
 .custom-navbar {
   position: fixed;
   z-index: 10;
-  height: 4.6875rem;
+  height: 3.125rem;
   width: 100%;
   margin: 0;
   padding: 0;
@@ -351,7 +383,7 @@ body {
     margin: 0;
     padding: 0;
     position: absolute;
-    top: 0.625rem;
+    top: 0.25rem;
     right: 0.3125rem; }
   .custom-navbar__content-list-item {
     display: inline;
@@ -362,7 +394,7 @@ body {
     width: 3.125rem;
     height: 3.125rem;
     position: absolute;
-    top: 0.375rem;
+    top: 0;
     left: 0.3125rem; }
   .custom-navbar__logo-text {
     padding: 0 1%;
@@ -373,7 +405,7 @@ body {
       color: #FF9B37; }
     .custom-navbar__logo-text--right {
       color: #265E5E;
-      margin-left: -0.625rem; }
+      margin-left: -0.3125rem; }
   .custom-navbar__social-media-icon {
     -webkit-transition: all 500ms ease-out;
     -moz-transition: all 500ms ease-out;
