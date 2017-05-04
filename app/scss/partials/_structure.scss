@@ -22,42 +22,52 @@ body {
   }
 
   &--body-content {
-    margin: 50px 0;
+
+    width: 100%;
+    padding: 0;
+    margin: rem-calc(50 0);
   }
 }
 
 .custom-navbar {
   position: fixed;
   z-index: 10;
-  height: 50px;
+  height: rem-calc(75);
   width: 100%;
   margin: 0;
   padding: 0;
   background: $white;
-  line-height: 50px;
+  line-height: rem-calc(50);
   vertical-align: middle;
-  border-bottom: 1px solid $black;
+  border-bottom: rem-calc(1) solid $black;
 
   &__content-list {
     list-style-type: none;
     margin: 0;
     padding: 0;
-    line-height: 50px;
     position: absolute;
-    top: 0;
-    right: 0.5rem;
+    top: rem-calc(10);
+    right: rem-calc(5);
   }
 
   &__content-list-item {
     display: inline;
     vertical-align: middle;
     text-transform: uppercase;
-    padding: 0 2px;
+    padding: rem-calc(0 2);
+  }
+
+  &__logo-link {
+    width: rem-calc(50);
+    height: rem-calc(50);
+    position: absolute;
+    top: rem-calc(6);
+    left: rem-calc(5);
   }
 
   &__logo-text {
     padding: 0 1%;
-    margin: 10px 0;
+    margin: rem-calc(5 0 7);
     vertical-align: inherit;
     font-family: $disco;
 
@@ -67,7 +77,7 @@ body {
 
     &--right {
       color: $blue-green;
-      margin-left: -0.5rem;
+      margin-left: rem-calc(-10);
     }
   }
 

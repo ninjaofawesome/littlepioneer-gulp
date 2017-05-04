@@ -144,6 +144,11 @@ a {
       width: 250px; } }
 
 .page-header {
+  flex: 0 0 100%;
+  max-width: 100%;
+  padding-right: 0;
+  padding-left: 0;
+  max-width: 100%;
   position: relative;
   margin-top: 0; }
   .page-header__background-poster {
@@ -326,42 +331,49 @@ body {
   margin: 0; }
 
 .container-fluid--body-content {
-  margin: 50px 0; }
+  width: 100%;
+  padding: 0;
+  margin: 3.125rem 0; }
 
 .custom-navbar {
   position: fixed;
   z-index: 10;
-  height: 50px;
+  height: 4.6875rem;
   width: 100%;
   margin: 0;
   padding: 0;
   background: #ffffff;
-  line-height: 50px;
+  line-height: 3.125rem;
   vertical-align: middle;
-  border-bottom: 1px solid #141414; }
+  border-bottom: 0.0625rem solid #141414; }
   .custom-navbar__content-list {
     list-style-type: none;
     margin: 0;
     padding: 0;
-    line-height: 50px;
     position: absolute;
-    top: 0;
-    right: 0.5rem; }
+    top: 0.625rem;
+    right: 0.3125rem; }
   .custom-navbar__content-list-item {
     display: inline;
     vertical-align: middle;
     text-transform: uppercase;
-    padding: 0 2px; }
+    padding: 0 0.125rem; }
+  .custom-navbar__logo-link {
+    width: 3.125rem;
+    height: 3.125rem;
+    position: absolute;
+    top: 0.375rem;
+    left: 0.3125rem; }
   .custom-navbar__logo-text {
     padding: 0 1%;
-    margin: 10px 0;
+    margin: 0.3125rem 0 0.4375rem;
     vertical-align: inherit;
     font-family: "street_credregular", "Arial Black", "Arial Bold", sans-serif; }
     .custom-navbar__logo-text--left {
       color: #FF9B37; }
     .custom-navbar__logo-text--right {
       color: #265E5E;
-      margin-left: -0.5rem; }
+      margin-left: -0.625rem; }
   .custom-navbar__social-media-icon {
     -webkit-transition: all 500ms ease-out;
     -moz-transition: all 500ms ease-out;
