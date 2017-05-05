@@ -59,19 +59,6 @@ a {
 .type-treatment--bluegreen {
   color: #265E5E; }
 
-.type-treatment--recording-title {
-  color: #265E5E;
-  font-family: "street_credregular", "Arial Black", "Arial Bold", sans-serif;
-  text-transform: uppercase;
-  text-align: center;
-  font-size: 10vw; }
-  @media all and (min-width: 480px) and (max-width: 767px) {
-    .type-treatment--recording-title {
-      font-size: 12vw; } }
-  @media all and (max-width: 479px) {
-    .type-treatment--recording-title {
-      font-size: 12vw; } }
-
 .type-treatment--centered {
   text-align: center; }
 
@@ -427,7 +414,7 @@ body {
 .width-adjustment--l-r-pad-large {
   padding: 0 2.5%; }
 
-.index-page__about-tiles-container {
+.index-page__about-tiles-container, .index-page__recording-cta-container {
   max-width: 75rem;
   margin-right: auto;
   margin-left: auto;
@@ -462,6 +449,50 @@ body {
 .index-page__paragraph-box {
   flex: 1;
   margin: 0 0.9375rem; }
+
+.index-page__recording-cta-tile {
+  flex: 0 0 100%;
+  max-width: 100%;
+  max-width: 100%;
+  display: block;
+  margin: 0.625rem auto;
+  padding: 0; }
+
+.index-page__recording-cta-title {
+  color: #265E5E;
+  font-family: "street_credregular", "Arial Black", "Arial Bold", sans-serif;
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 8.5vw;
+  line-height: calc(8.5vw * 0.785);
+  font-weight: 400; }
+  @media all and (min-width: 480px) and (max-width: 767px) {
+    .index-page__recording-cta-title {
+      color: #265E5E;
+      font-family: "street_credregular", "Arial Black", "Arial Bold", sans-serif;
+      text-transform: uppercase;
+      text-align: center;
+      font-size: 12vw;
+      line-height: calc(12vw * 0.785);
+      font-weight: 400; } }
+  @media all and (min-width: 480px) and (max-width: 767px) {
+    .index-page__recording-cta-title {
+      color: #265E5E;
+      font-family: "street_credregular", "Arial Black", "Arial Bold", sans-serif;
+      text-transform: uppercase;
+      text-align: center;
+      font-size: 12vw;
+      line-height: calc(12vw * 0.785);
+      font-weight: 400; } }
+
+.index-page__recording-cta-subtitle {
+  color: #6B6B6B;
+  font-family: Candara, Calibri, Segoe, "Segoe UI", Optima, Arial, sans-serif;
+  text-align: center;
+  font-size: 18px;
+  line-height: 19px;
+  font-weight: 700;
+  margin: 0 0.3125rem; }
 
 .about-page__help-list {
   list-style-type: none;

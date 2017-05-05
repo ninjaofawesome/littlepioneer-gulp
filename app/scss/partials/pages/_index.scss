@@ -1,6 +1,7 @@
 .index-page {
 
-  &__about-tiles-container {
+  &__about-tiles-container,
+  &__recording-cta-container {
     @include flex-grid-row();
 
 
@@ -35,5 +36,31 @@
   &__paragraph-box {
     flex: 1;
     margin: rem-calc(0 15);
+  }
+
+  &__recording-cta-tile {
+    @include flex-grid-column(12);
+
+    display: block;
+    margin: rem-calc(10) auto;
+    padding: rem-calc(0, 10);
+  }
+
+
+  &__recording-cta-title {
+    @include TitleText($blue-green);
+
+    @include breakpoint(mobile) {
+      @include TitleText($blue-green, 12vw);
+    }
+
+    @include breakpoint(mobile) {
+      @include TitleText($blue-green, 12vw);
+    }
+  }
+
+  &__recording-cta-subtitle {
+    @include GrayBold();
+    margin: rem-calc(0 5);
   }
 }

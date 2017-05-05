@@ -61,6 +61,15 @@
   font-weight: 500;
 }
 
+@mixin GrayBold() {
+  color: $gray;
+  font-family: $serif;
+  text-align: center;
+  font-size: 18px;
+  line-height: 19px;
+  font-weight: 700;
+}
+
 
 @mixin SubtitleTextMobile($color: $blue-green) {
   color: $color;

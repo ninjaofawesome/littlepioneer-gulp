@@ -73,22 +73,6 @@ a {
     color: $blue-green;
   }
 
-  &--recording-title {
-    color: $blue-green;
-    font-family: $disco;
-    text-transform: uppercase;
-    text-align: center;
-    font-size: 10vw;
-
-    @include breakpoint(mobile){
-      font-size: 12vw;
-    }
-
-    @include breakpoint(iphone){
-      font-size: 12vw;
-    }
-  }
-
   &--centered {
     text-align: center;
   }
