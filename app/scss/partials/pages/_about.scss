@@ -3,7 +3,41 @@
   &__help-list {
     list-style-type: none;
     padding: 0;
-    margin: 0;
+    margin: rem-calc(0 10);
     text-align: justify;
   }
+
+  &__content-container {
+    @include flex-grid-row();
+  }
+
+  &__title {
+    @include flex-grid-column(12);
+    @include TitleText($blue-green, 9vw);
+
+    padding-top: rem-calc(20);
+    padding-bottom: rem-calc(10);
+
+  }
+
+  &__content-wrapper {
+    @include flex-grid-column(5.75);
+
+    @include breakpoint(tablet) {
+      @include flex-grid-column(12);
+    }
+
+    @include breakpoint(mobile) {
+      @include flex-grid-column(12);
+    }
+
+    @include breakpoint(iphone) {
+      @include flex-grid-column(12);
+    }
+  }
+
+  &__content-copy {
+    margin: rem-calc(0 10);
+  }
+
 }

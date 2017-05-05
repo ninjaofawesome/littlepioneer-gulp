@@ -1,29 +1,27 @@
 .button {
 
   &--more-button,
-  &--contact-button {
+  &--contact-button,
+  &--recording-button {
     @include link-transition(500ms);
-    border-radius: 6px;
-    padding: 5px 10px;
-    font-weight: 700;
-    font-size: 1.25em;
-    text-transform: uppercase;
+    @include ButtonText($white);
+    border-radius: rem-calc(6);
+    padding: rem-calc(5 10);
     display: block;
     margin: 1% auto;
-    text-align: center;
 
     &:active,
     &:focus,
     &:hover {
       background: $orange;
       color: $white;
-      border: 2px solid $white;
+      border: rem-calc(2) solid $white;
     }
 
     &:visited {
       background: $white;
       color: $orange;
-      border: 2px solid $orange;
+      border: rem-calc(2) solid $orange;
     }
 
     //TODO, remove
@@ -33,22 +31,22 @@
   }
 
   &--contact-button {
+    @include ButtonText($white);
     width: 250px;
     background: $blue-green;
-    color: $white;
-    border: 2px solid $blue-green;
+    border: rem-calc(2) solid $blue-green;
 
     &:active,
     &:focus,
     &:hover {
       background: $white;
       color: $blue-green;
-      border: 2px solid $blue-green;
+      border: rem-calc(2) solid $blue-green;
     }
     &:visited {
       background: $blue-green;
       color: $white;
-      border: 2px solid $blue-green;
+      border: rem-calc(2) solid $blue-green;
     }
   }
 
@@ -76,4 +74,37 @@
       margin: 2.5% auto;
     }
   }
+
+  &--recording-button {
+    @include ButtonText($white);
+    width: 250px;
+    background: $blue-green;
+    border: rem-calc(2) solid $blue-green;
+
+    &:active,
+    &:focus,
+    &:hover {
+      background: $white;
+      color: $blue-green;
+      border: rem-calc(2) solid $blue-green;
+    }
+    &:visited {
+      background: $blue-green;
+      color: $white;
+      border: rem-calc(2) solid $blue-green;
+    }
+
+    @include breakpoint(tablet) {
+      width: 225px;
+    }
+
+    @include breakpoint(mobile) {
+      width: 200px;
+    }
+
+    @include breakpoint(iphone) {
+      width: 200px;
+    }
+  }
+
 }

@@ -116,3 +116,29 @@ body {
     padding: 0 2.5%;
   }
 }
+
+.recording-container {
+  @include flex-grid-column(12);
+
+  margin-top: rem-calc(20);
+
+  &__title {
+    @include TitleText($blue-green, 7vw);
+
+    @include breakpoint(desktop) {
+      @include TitleText($blue-green, 8vw);
+    }
+
+    @include breakpoint(tablet) {
+      @include TitleText($blue-green, 8.5vw);
+    }
+
+    @include breakpoint(mobile) {
+      @include TitleText($blue-green, 9vw);
+    }
+
+    @include breakpoint(iphone) {
+      @include TitleText($blue-green, 9.5vw);
+    }
+  }
+}

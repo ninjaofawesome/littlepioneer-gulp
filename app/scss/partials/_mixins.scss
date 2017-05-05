@@ -70,7 +70,6 @@
   font-weight: 700;
 }
 
-
 @mixin SubtitleTextMobile($color: $blue-green) {
   color: $color;
   font-family: $serif;
@@ -78,6 +77,15 @@
   text-align: center;
   font-size: 20px;
   line-height: 23px;
+}
+
+@mixin ButtonText($color: $white) {
+  color: $color;
+  font-family: $serif;
+  font-weight: 700;
+  font-size: 1.25em;
+  text-transform: uppercase;
+  text-align: center;
 }
 
 
