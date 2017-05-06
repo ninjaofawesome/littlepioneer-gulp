@@ -29,6 +29,41 @@ body {
   }
 }
 
+.about-page,
+.gear-page {
+
+  &__content-container {
+    @include flex-grid-row();
+
+    max-width: 100%;
+  }
+
+  &__content-wrapper {
+    @include flex-grid-column(6);
+    display: flex;
+    flex-direction: column;
+
+    @include breakpoint(tablet) {
+      @include flex-grid-column(12);
+    }
+
+    @include breakpoint(mobile) {
+      @include flex-grid-column(12);
+    }
+
+    @include breakpoint(iphone) {
+      @include flex-grid-column(12);
+    }
+  }
+
+  &__content-wrapper-single {
+    @include flex-grid-column(12);
+
+    display: flex;
+    flex-direction: column;
+  }
+}
+
 .custom-navbar {
 
   position: fixed;
@@ -97,24 +132,6 @@ body {
     &:visited {
       color: $orange;
     }
-  }
-}
-
-.height-adjustment {
-
-  &--block-margin-2-5 {
-    margin: 2.5% auto;
-  }
-}
-
-.width-adjustment {
-
-  &--l-r-pad {
-    padding: 0 5%;
-  }
-
-  &--l-r-pad-large {
-    padding: 0 2.5%;
   }
 }
 
