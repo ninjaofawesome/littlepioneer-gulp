@@ -1,5 +1,9 @@
 .listen-page {
 
+  &__content-container {
+    margin-top: rem-calc(20);
+  }
+
   &__playlist-group {
     list-style-type: none;
     padding: 0;
@@ -7,10 +11,34 @@
   }
 
   &__playlist-group-item {
-    width: 200px;
-    height: 25px;
+    width: rem-calc(200);
+    height: rem-calc(25);
     padding: 0;
-    margin: 2px auto;
+    margin: rem-calc(2) auto;
+  }
+
+  &__title {
+    @include TitleText($blue-green, 9vw);
+
+    padding-top: rem-calc(10);
+    padding-bottom: rem-calc(14);
+
+    @include breakpoint(tablet) {
+      @include TitleText($blue-green, 10vw);
+
+      padding-bottom: 0;
+    }
+
+    @include breakpoint(mobile) {
+      @include TitleText($blue-green, 10vw);
+    }
+
+    @include breakpoint(iphone) {
+      @include TitleText($blue-green, 11vw);
+
+      padding-bottom: 0;
+    }
+
   }
 
   &__playlist-group-item-arrow {
@@ -26,29 +54,45 @@
     }
   }
 
+  &__music-box-title {
+    @include SubtitleText($blue-green, 2.5vw);
+
+    @include breakpoint(tablet) {
+      @include SubtitleText($blue-green, 3.75vw);
+    }
+
+    @include breakpoint(mobile) {
+      @include SubtitleText($blue-green, 4.5vw);
+    }
+
+    @include breakpoint(iphone) {
+      @include SubtitleText($blue-green, 5.75vw);
+    }
+  }
+
   &__music-box {
     display: block;
-    margin: 10px auto;
+    margin: rem-calc(10) auto;
     height: 520px;
 
     @include breakpoint(large){
-      width:400px;
+       width: 97%;
     }
 
     @include breakpoint(desktop){
-      width: 385px;
+      width: 95%;
     }
 
     @include breakpoint(tablet){
-      width: 375px;
+      width: 95%;
     }
 
     @include breakpoint(mobile){
-      width: 350px;
+      width: 90%;
     }
 
     @include breakpoint(iphone){
-      width: 320px;
+      width: 90%;
     }
   }
 }

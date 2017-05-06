@@ -1,6 +1,5 @@
 .index-page {
 
-  &__about-tiles-container,
   &__recording-cta-container {
     @include flex-grid-row();
 
@@ -8,23 +7,8 @@
     margin-top: rem-calc(20);
   }
 
-  &__about-tiles {
-    @include flex-grid-column(4);
-    display: flex;
-    flex-direction: column;
-
-
-    @include breakpoint(mobile){
-      @include flex-grid-column(12);
-
-      margin-top: rem-calc(10);
-    }
-
-    @include breakpoint(iphone){
-      @include flex-grid-column(12);
-
-      margin-top: rem-calc(10);
-    }
+  &__content-container {
+    margin-top: rem-calc(20);
   }
 
   &__cta-title {

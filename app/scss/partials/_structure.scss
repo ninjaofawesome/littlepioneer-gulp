@@ -29,8 +29,10 @@ body {
   }
 }
 
+.index-page,
 .about-page,
-.gear-page {
+.gear-page,
+.listen-page {
 
   &__content-container {
     @include flex-grid-row();
@@ -61,6 +63,26 @@ body {
 
     display: flex;
     flex-direction: column;
+  }
+
+  &__content-wrapper-triple {
+    @include flex-grid-column(4);
+    display: flex;
+    flex-direction: column;
+
+
+    @include breakpoint(mobile){
+      @include flex-grid-column(12);
+
+      margin-top: rem-calc(10);
+    }
+
+    @include breakpoint(iphone){
+      @include flex-grid-column(12);
+
+      margin-top: rem-calc(10);
+    }
+
   }
 }
 
