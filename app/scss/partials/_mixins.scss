@@ -58,6 +58,16 @@
   font-weight: 400;
 }
 
+@mixin TitleTextFixed($color: $orange, $size: 30px) {
+  color: $color;
+  font-family: $disco;
+  text-transform: uppercase;
+  text-align: center;
+  font-size: $size;
+  line-height: calc(#{$size} * 0.785);
+  font-weight: 400;
+}
+
 @mixin SubtitleText($color: $blue-green, $size: 2vw) {
   color: $color;
   font-family: $serif;

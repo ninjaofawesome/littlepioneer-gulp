@@ -32,7 +32,8 @@ body {
 .index-page,
 .about-page,
 .gear-page,
-.listen-page {
+.listen-page,
+.testimonials-page {
 
   &__content-container {
     @include flex-grid-row();
