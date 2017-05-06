@@ -4,7 +4,7 @@
   &__recording-cta-container {
     @include flex-grid-row();
 
-
+    max-width: 100%;
     margin-top: rem-calc(20);
   }
 

@@ -126,7 +126,7 @@ a {
     background-image: url("https://res.cloudinary.com/ninjaofawesome/image/upload/v1492131750/littlepioneer/img4.jpg");
     background-repeat: no-repeat;
     background-size: cover;
-    height: 21.875rem;
+    height: 350px;
     opacity: 0.50;
     filter: alpha(opacity=50); }
   .page-header__logo-box {
@@ -500,6 +500,7 @@ body {
   margin-left: auto;
   display: flex;
   flex-flow: row wrap;
+  max-width: 100%;
   margin-top: 1.25rem; }
 
 .index-page__about-tiles {
@@ -585,7 +586,8 @@ body {
   margin-right: auto;
   margin-left: auto;
   display: flex;
-  flex-flow: row wrap; }
+  flex-flow: row wrap;
+  max-width: 100%; }
 
 .about-page__title {
   flex: 0 0 100%;
