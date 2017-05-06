@@ -48,6 +48,18 @@
       color: $white;
       border: rem-calc(2) solid $blue-green;
     }
+
+    @include breakpoint(tablet) {
+      width: 225px;
+    }
+
+    @include breakpoint(mobile) {
+      width: 200px;
+    }
+
+    @include breakpoint(iphone) {
+      width: 200px;
+    }
   }
 
   &--more-button {

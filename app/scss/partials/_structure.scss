@@ -122,6 +122,14 @@ body {
 
   margin-top: rem-calc(20);
 
+  @include breakpoint(mobile) {
+    margin-top: rem-calc(30);
+  }
+
+  @include breakpoint(iphone) {
+    margin-top: rem-calc(30);
+  }
+
   &__title {
     @include TitleText($blue-green, 7vw);
 

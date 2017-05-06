@@ -58,7 +58,7 @@ a {
   }
 
   &--subtitle {
-    color: $blue-green;
+    @include SubtitleFixed();
     text-transform: uppercase;
     text-align: center;
   }
@@ -112,37 +112,6 @@ a {
 
     &:visted {
       color: $blue-green;
-    }
-  }
-}
-
-.recording-container {
-  width: 75%;
-  height: 75px;
-  display: block;
-  margin: 0 auto;
-
-  &__title {
-    color: $blue-green;
-    font-family: $disco;
-    text-transform: uppercase;
-    text-align: center;
-    font-size: 4em;
-
-    @include breakpoint(desktop){
-      font-size: 3em;
-    }
-
-    @include breakpoint(tablet){
-      font-size: 3em;
-    }
-
-    @include breakpoint(mobile){
-      font-size: 2em;
-    }
-
-    @include breakpoint(iphone){
-      font-size: 2em;
     }
   }
 }
