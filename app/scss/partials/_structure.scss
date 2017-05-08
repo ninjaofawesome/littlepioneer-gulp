@@ -71,7 +71,6 @@ body {
     display: flex;
     flex-direction: column;
 
-
     @include breakpoint(mobile){
       @include flex-grid-column(12);
 

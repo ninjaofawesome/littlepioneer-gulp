@@ -843,13 +843,22 @@ body {
   width: 90%;
   height: auto;
   margin: 2.5% 5%;
-  border: 0 !important; }
+  flex: 1; }
+  @media all and (min-width: 768px) and (max-width: 991px) {
+    .artist-testimonial {
+      margin: 1% 5%; } }
+  @media all and (min-width: 480px) and (max-width: 767px) {
+    .artist-testimonial {
+      margin: 0 5%; } }
+  @media all and (max-width: 479px) {
+    .artist-testimonial {
+      margin: 0 5%; } }
   .artist-testimonial__image {
     height: 200px;
     width: 200px;
     border-radius: 100px;
     display: block;
-    margin: 2.5% auto; }
+    margin: 0.625rem auto; }
   .artist-testimonial__name {
     color: #265E5E;
     font-family: "street_credregular", "Arial Black", "Arial Bold", sans-serif;
@@ -880,10 +889,8 @@ body {
       border: 0 !important; }
   .artist-testimonial__testimonial-container {
     width: 90%;
-    height: 300px;
     margin: 5%;
-    position: relative;
-    border: 0 !important; }
+    position: relative; }
   .artist-testimonial__testimonial {
     text-align: justify; }
 

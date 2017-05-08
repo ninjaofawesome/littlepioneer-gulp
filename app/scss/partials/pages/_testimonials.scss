@@ -29,14 +29,28 @@
   width: 90%;
   height: auto;
   margin: 2.5% 5%;
-  border: 0 !important;
+  flex: 1;
+
+  @include breakpoint(tablet) {
+    margin: 1% 5%;
+  }
+
+  @include breakpoint(mobile) {
+    margin: 0 5%;
+  }
+
+  @include breakpoint(iphone) {
+    margin: 0 5%;
+  }
+
+
 
   &__image {
     height: 200px;
     width: 200px;
     border-radius: 100px;
     display: block;
-    margin: 2.5% auto;
+    margin: rem-calc(10) auto;
   }
 
   &__name {
@@ -67,10 +81,8 @@
 
   &__testimonial-container {
     width: 90%;
-    height: 300px;
     margin: 5%;
     position: relative;
-    border: 0 !important;
   }
 
   &__testimonial {
