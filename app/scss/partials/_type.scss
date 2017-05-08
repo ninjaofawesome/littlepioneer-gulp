@@ -27,15 +27,21 @@ p {
 }
 
 a {
+  @include link-transition(350ms);
+
   color: $blue-green;
   text-decoration: none;
-  &:hover, &:active, &:focus {
+
+  &:hover,
+  &:active,
+  &:focus {
     color: $aqua;
     text-decoration: none;
   }
+
   &:visited {
     color: $blue-green;
-    text-decoration: underline;
+    text-decoration: none;
   }
 }
 

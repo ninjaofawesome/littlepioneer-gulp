@@ -23,6 +23,10 @@ p {
   text-align: justify; }
 
 a {
+  -webkit-transition: all 350ms ease-out;
+  -moz-transition: all 350ms ease-out;
+  -o-transition: all 350ms ease-out;
+  transition: all 350ms ease-out;
   color: #265E5E;
   text-decoration: none; }
   a:hover, a:active, a:focus {
@@ -30,7 +34,7 @@ a {
     text-decoration: none; }
   a:visited {
     color: #265E5E;
-    text-decoration: underline; }
+    text-decoration: none; }
 
 .type-treatment--title-bg {
   color: #265E5E;
@@ -932,7 +936,7 @@ body {
     font-weight: 400;
     margin: 0 auto; }
   .artist-testimonial__artist-link {
-    color: #265E5E;
+    color: #FF9B37;
     font-family: "street_credregular", "Arial Black", "Arial Bold", sans-serif;
     text-transform: uppercase;
     text-align: center;
@@ -941,15 +945,16 @@ body {
     font-weight: 400;
     display: block;
     margin: 0.3125rem auto 0 auto;
-    border: 0 !important; }
+    text-decoration: none;
+    outline: 0; }
     .artist-testimonial__artist-link:active, .artist-testimonial__artist-link:focus, .artist-testimonial__artist-link:hover {
-      color: #AAAA00;
+      color: #FF9B37;
       text-decoration: none;
-      border: 0 !important; }
+      outline: 0; }
     .artist-testimonial__artist-link:visited {
       color: #FF9B37;
       text-decoration: none;
-      border: 0 !important; }
+      outline: 0; }
   .artist-testimonial__testimonial-container {
     width: 90%;
     margin: 5%;
