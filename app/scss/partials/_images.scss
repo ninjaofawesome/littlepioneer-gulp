@@ -23,12 +23,18 @@
     display: block;
     margin: 0 auto;
 
+    @include breakpoint(tablet){
+      margin: rem-calc(15) auto 0 auto;
+    }
+
     @include breakpoint(mobile){
       width: 250px;
+      margin: rem-calc(10) auto 0 auto;
     }
 
     @include breakpoint(iphone){
       width: 250px;
+      margin: rem-calc(10) auto 0 auto;
     }
   }
 }

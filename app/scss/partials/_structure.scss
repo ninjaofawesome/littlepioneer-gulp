@@ -33,7 +33,8 @@ body {
 .about-page,
 .gear-page,
 .listen-page,
-.testimonials-page {
+.testimonials-page,
+.not-found {
 
   &__content-container {
     @include flex-grid-row();
@@ -189,4 +190,40 @@ body {
       @include TitleText($blue-green, 9.5vw);
     }
   }
+}
+
+.not-found {
+
+
+  &__title {
+    @include TitleText($orange, 9vw);
+
+    padding-top: rem-calc(10);
+    padding-bottom: rem-calc(14);
+
+    @include breakpoint(tablet) {
+      @include TitleText($orange, 10vw);
+
+      padding-bottom: 0;
+    }
+
+    @include breakpoint(mobile) {
+      @include TitleText($orange, 10vw);
+    }
+
+    @include breakpoint(iphone) {
+      @include TitleText($orange, 11vw);
+
+      padding-bottom: 0;
+    }
+  }
+
+
+  &__subtitle {
+    @include SubtitleFixed($orange);
+    text-align: center;
+    margin-top: rem-calc(10);
+
+  }
+
 }
