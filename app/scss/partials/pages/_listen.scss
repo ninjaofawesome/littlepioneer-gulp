@@ -55,7 +55,7 @@
   }
 
   &__music-box-title {
-    @include SubtitleText($blue-green, 2.5vw);
+    @include SubtitleText($blue-green, 1.5vw);
 
     @include breakpoint(tablet) {
       @include SubtitleText($blue-green, 3.75vw);
