@@ -52,6 +52,13 @@ gulp.task('fonts', function() {
   .pipe(gulp.dest('dist/fonts'))
 })
 
+gulp.task('cname', function() {
+  gulp.src(['CNAME'])
+    .pipe(gulp.dest('./dist/'));
+  console.log('Running the gulpfile and the copy CNAME task');
+})
+
+
 gulp.task('clean:dist', function() {
   return del.sync('dist');
 })
@@ -69,7 +76,7 @@ gulp.task('watch', ['browserSync', 'sass'], function (){
 
 gulp.task('build', function (callback) {
   runSequence('clean:dist',
-    ['compile', 'images', 'fonts'],
+    ['compile', 'images', 'fonts', 'cname'],
     callback
   )
 });
