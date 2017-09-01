@@ -73,25 +73,30 @@
   &__music-box {
     display: block;
     margin: rem-calc(10) auto;
-    height: 650px;
+
 
     @include breakpoint(large){
-       width: 97%;
+      height: 650px;
+      width: 97%;
     }
 
     @include breakpoint(desktop){
+      height: 650px;
       width: 95%;
     }
 
     @include breakpoint(tablet){
+      height: 650px;
       width: 95%;
     }
 
     @include breakpoint(mobile){
+      height: 650px;
       width: 90%;
     }
 
     @include breakpoint(iphone){
+      height: 650px;
       width: 90%;
     }
   }

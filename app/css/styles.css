@@ -1061,20 +1061,24 @@ body {
 
 .listen-page__music-box {
   display: block;
-  margin: 0.625rem auto;
-  height: 650px; }
+  margin: 0.625rem auto; }
   @media all and (min-width: 1200px) {
     .listen-page__music-box {
+      height: 650px;
       width: 97%; } }
   @media all and (min-width: 992px) and (max-width: 1199px) {
     .listen-page__music-box {
+      height: 650px;
       width: 95%; } }
   @media all and (min-width: 768px) and (max-width: 991px) {
     .listen-page__music-box {
+      height: 650px;
       width: 95%; } }
   @media all and (min-width: 480px) and (max-width: 767px) {
     .listen-page__music-box {
+      height: 650px;
       width: 90%; } }
   @media all and (max-width: 479px) {
     .listen-page__music-box {
+      height: 650px;
       width: 90%; } }
