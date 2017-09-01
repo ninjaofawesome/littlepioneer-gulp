@@ -1062,7 +1062,7 @@ body {
 .listen-page__music-box {
   display: block;
   margin: 0.625rem auto;
-  height: 520px; }
+  height: 650px; }
   @media all and (min-width: 1200px) {
     .listen-page__music-box {
       width: 97%; } }
