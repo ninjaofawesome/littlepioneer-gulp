@@ -83,7 +83,30 @@ body {
 
       margin-top: rem-calc(10);
     }
+  }
 
+  &__content-wrapper-triple--music-box {
+    @include flex-grid-column(4);
+    display: flex;
+    flex-direction: column;
+
+    @include breakpoint(tablet){
+      @include flex-grid-column(12);
+
+      margin-top: rem-calc(10);
+    }
+
+    @include breakpoint(mobile){
+      @include flex-grid-column(12);
+
+      margin-top: rem-calc(10);
+    }
+
+    @include breakpoint(iphone){
+      @include flex-grid-column(12);
+
+      margin-top: rem-calc(10);
+    }
   }
 }
 

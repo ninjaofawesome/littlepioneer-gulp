@@ -489,6 +489,51 @@ body {
       max-width: 100%;
       margin-top: 0.625rem; } }
 
+.index-page__content-wrapper-triple--music-box,
+.about-page__content-wrapper-triple--music-box,
+.gear-page__content-wrapper-triple--music-box,
+.listen-page__content-wrapper-triple--music-box,
+.testimonials-page__content-wrapper-triple--music-box,
+.not-found__content-wrapper-triple--music-box {
+  flex: 0 0 33.33333%;
+  max-width: 33.33333%;
+  max-width: 33.33333%;
+  display: flex;
+  flex-direction: column; }
+  @media all and (min-width: 768px) and (max-width: 991px) {
+    .index-page__content-wrapper-triple--music-box,
+    .about-page__content-wrapper-triple--music-box,
+    .gear-page__content-wrapper-triple--music-box,
+    .listen-page__content-wrapper-triple--music-box,
+    .testimonials-page__content-wrapper-triple--music-box,
+    .not-found__content-wrapper-triple--music-box {
+      flex: 0 0 100%;
+      max-width: 100%;
+      max-width: 100%;
+      margin-top: 0.625rem; } }
+  @media all and (min-width: 480px) and (max-width: 767px) {
+    .index-page__content-wrapper-triple--music-box,
+    .about-page__content-wrapper-triple--music-box,
+    .gear-page__content-wrapper-triple--music-box,
+    .listen-page__content-wrapper-triple--music-box,
+    .testimonials-page__content-wrapper-triple--music-box,
+    .not-found__content-wrapper-triple--music-box {
+      flex: 0 0 100%;
+      max-width: 100%;
+      max-width: 100%;
+      margin-top: 0.625rem; } }
+  @media all and (max-width: 479px) {
+    .index-page__content-wrapper-triple--music-box,
+    .about-page__content-wrapper-triple--music-box,
+    .gear-page__content-wrapper-triple--music-box,
+    .listen-page__content-wrapper-triple--music-box,
+    .testimonials-page__content-wrapper-triple--music-box,
+    .not-found__content-wrapper-triple--music-box {
+      flex: 0 0 100%;
+      max-width: 100%;
+      max-width: 100%;
+      margin-top: 0.625rem; } }
+
 .custom-navbar {
   position: fixed;
   z-index: 10;
@@ -1061,24 +1106,4 @@ body {
 
 .listen-page__music-box {
   display: block;
-  margin: 0.625rem auto; }
-  @media all and (min-width: 1200px) {
-    .listen-page__music-box {
-      height: 650px;
-      width: 97%; } }
-  @media all and (min-width: 992px) and (max-width: 1199px) {
-    .listen-page__music-box {
-      height: 650px;
-      width: 95%; } }
-  @media all and (min-width: 768px) and (max-width: 991px) {
-    .listen-page__music-box {
-      height: 650px;
-      width: 95%; } }
-  @media all and (min-width: 480px) and (max-width: 767px) {
-    .listen-page__music-box {
-      height: 650px;
-      width: 90%; } }
-  @media all and (max-width: 479px) {
-    .listen-page__music-box {
-      height: 650px;
-      width: 90%; } }
+  margin: 5% auto; }
