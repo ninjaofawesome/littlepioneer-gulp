@@ -1106,4 +1106,5 @@ body {
 
 .listen-page__music-box {
   display: block;
-  margin: 5% auto; }
+  margin: 5% auto;
+  height: 472px; }
