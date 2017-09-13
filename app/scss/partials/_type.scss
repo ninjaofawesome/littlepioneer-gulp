@@ -45,6 +45,19 @@ a {
   }
 }
 
+.link--solid-orange {
+  color: $orange;
+
+  &:active,
+  &:hover,
+  &:focus,
+  &:visited {
+    color: $orange;
+    outline: 0;
+    text-decoration: none;
+  }
+}
+
 .type-treatment {
 
   &--title-bg {

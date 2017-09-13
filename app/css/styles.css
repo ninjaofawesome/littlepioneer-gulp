@@ -36,6 +36,13 @@ a {
     color: #265E5E;
     text-decoration: none; }
 
+.link--solid-orange {
+  color: #FF9B37; }
+  .link--solid-orange:active, .link--solid-orange:hover, .link--solid-orange:focus, .link--solid-orange:visited {
+    color: #FF9B37;
+    outline: 0;
+    text-decoration: none; }
+
 .type-treatment--title-bg {
   color: #265E5E;
   font-family: "street_credregular", "Arial Black", "Arial Bold", sans-serif;
@@ -1016,10 +1023,55 @@ body {
   margin: 0; }
 
 .listen-page__playlist-group-item {
-  width: 12.5rem;
-  height: 1.5625rem;
-  padding: 0;
-  margin: 0.125rem auto; }
+  flex: 0 0 50%;
+  max-width: 50%;
+  max-width: 50%;
+  display: block;
+  margin: 0.625rem auto;
+  text-align: center;
+  color: #FF9B37;
+  font-family: "street_credregular", "Arial Black", "Arial Bold", sans-serif;
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 3vw;
+  line-height: calc(3vw * 0.785);
+  font-weight: 400; }
+  @media all and (min-width: 768px) and (max-width: 991px) {
+    .listen-page__playlist-group-item {
+      flex: 0 0 66.66667%;
+      max-width: 66.66667%;
+      max-width: 66.66667%;
+      color: #FF9B37;
+      font-family: "street_credregular", "Arial Black", "Arial Bold", sans-serif;
+      text-transform: uppercase;
+      text-align: center;
+      font-size: 5vw;
+      line-height: calc(5vw * 0.785);
+      font-weight: 400; } }
+  @media all and (min-width: 480px) and (max-width: 767px) {
+    .listen-page__playlist-group-item {
+      flex: 0 0 83.33333%;
+      max-width: 83.33333%;
+      max-width: 83.33333%;
+      color: #FF9B37;
+      font-family: "street_credregular", "Arial Black", "Arial Bold", sans-serif;
+      text-transform: uppercase;
+      text-align: center;
+      font-size: 6vw;
+      line-height: calc(6vw * 0.785);
+      font-weight: 400; } }
+  @media all and (max-width: 479px) {
+    .listen-page__playlist-group-item {
+      flex: 0 0 83.33333%;
+      max-width: 83.33333%;
+      max-width: 83.33333%;
+      color: #FF9B37;
+      font-family: "street_credregular", "Arial Black", "Arial Bold", sans-serif;
+      text-transform: uppercase;
+      text-align: center;
+      font-size: 7vw;
+      line-height: calc(7vw * 0.785);
+      font-weight: 400; } }
 
 .listen-page__title {
   color: #265E5E;
@@ -1060,6 +1112,10 @@ body {
       line-height: calc(11vw * 0.785);
       font-weight: 400;
       padding-bottom: 0; } }
+
+.listen-page__list-title {
+  padding-top: 0.625rem;
+  padding-bottom: 0.875rem; }
 
 .listen-page__playlist-group-item-arrow {
   color: #FF9B37;

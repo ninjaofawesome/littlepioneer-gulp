@@ -11,10 +11,29 @@
   }
 
   &__playlist-group-item {
-    width: rem-calc(200);
-    height: rem-calc(25);
-    padding: 0;
-    margin: rem-calc(2) auto;
+    @include flex-grid-column(6);
+
+    display: block;
+    margin: rem-calc(10) auto;
+    text-align: center;
+    @include TitleText($size: 3vw);
+
+    @include breakpoint(tablet) {
+      @include flex-grid-column(8);
+      @include TitleText($size: 5vw);
+    }
+
+    @include breakpoint(mobile) {
+      @include flex-grid-column(10);
+      @include TitleText($size: 6vw);
+    }
+
+    @include breakpoint(iphone) {
+      @include flex-grid-column(10);
+
+      @include TitleText($size: 7vw);
+    }
+
   }
 
   &__title {
@@ -38,6 +57,13 @@
 
       padding-bottom: 0;
     }
+
+  }
+
+  &__list-title {
+
+    padding-top: rem-calc(10);
+    padding-bottom: rem-calc(14);
 
   }
 
