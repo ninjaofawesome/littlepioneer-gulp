@@ -61,7 +61,6 @@
 @mixin TitleTextFixed($color: $orange, $size: 30px) {
   color: $color;
   font-family: $disco;
-  text-transform: uppercase;
   text-align: center;
   font-size: $size;
   line-height: calc(#{$size} * 0.785);
@@ -111,6 +110,13 @@
   font-size: 1.25em;
   text-transform: uppercase;
   text-align: center;
+}
+
+@mixin BodyText() {
+  color: $blue-green;
+  font-size: 16px;
+  line-height: 18px;
+  font-family: $serif;
 }
 
 

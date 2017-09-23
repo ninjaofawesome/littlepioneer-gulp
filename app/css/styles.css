@@ -981,7 +981,6 @@ body {
   .artist-testimonial__name {
     color: #265E5E;
     font-family: "street_credregular", "Arial Black", "Arial Bold", sans-serif;
-    text-transform: uppercase;
     text-align: center;
     font-size: 30px;
     line-height: calc(30px * 0.785);
@@ -990,7 +989,6 @@ body {
   .artist-testimonial__artist-link {
     color: #FF9B37;
     font-family: "street_credregular", "Arial Black", "Arial Bold", sans-serif;
-    text-transform: uppercase;
     text-align: center;
     font-size: 18px;
     line-height: calc(18px * 0.785);
@@ -1057,8 +1055,8 @@ body {
       font-family: "street_credregular", "Arial Black", "Arial Bold", sans-serif;
       text-transform: uppercase;
       text-align: center;
-      font-size: 6vw;
-      line-height: calc(6vw * 0.785);
+      font-size: 7vw;
+      line-height: calc(7vw * 0.785);
       font-weight: 400; } }
   @media all and (max-width: 479px) {
     .listen-page__playlist-group-item {
@@ -1069,8 +1067,8 @@ body {
       font-family: "street_credregular", "Arial Black", "Arial Bold", sans-serif;
       text-transform: uppercase;
       text-align: center;
-      font-size: 7vw;
-      line-height: calc(7vw * 0.785);
+      font-size: 8vw;
+      line-height: calc(8vw * 0.785);
       font-weight: 400; } }
 
 .listen-page__title {
@@ -1117,50 +1115,22 @@ body {
   padding-top: 0.625rem;
   padding-bottom: 0.875rem; }
 
-.listen-page__playlist-group-item-arrow {
-  color: #FF9B37;
-  text-decoration: none; }
-  .listen-page__playlist-group-item-arrow:active, .listen-page__playlist-group-item-arrow:focus, .listen-page__playlist-group-item-arrow:hover, .listen-page__playlist-group-item-arrow:visited {
-    color: #FF9B37;
-    text-decoration: none; }
-
-.listen-page__music-box-title {
+.listen-page__playlist-description {
   color: #265E5E;
   font-family: Candara, Calibri, Segoe, "Segoe UI", Optima, Arial, sans-serif;
   text-transform: uppercase;
   text-align: center;
-  font-size: 1.5vw;
-  line-height: calc(1.5vw * 1.05);
-  font-weight: 500; }
-  @media all and (min-width: 768px) and (max-width: 991px) {
-    .listen-page__music-box-title {
-      color: #265E5E;
-      font-family: Candara, Calibri, Segoe, "Segoe UI", Optima, Arial, sans-serif;
-      text-transform: uppercase;
-      text-align: center;
-      font-size: 3.75vw;
-      line-height: calc(3.75vw * 1.05);
-      font-weight: 500; } }
+  font-size: 20px;
+  line-height: 23px; }
   @media all and (min-width: 480px) and (max-width: 767px) {
-    .listen-page__music-box-title {
+    .listen-page__playlist-description {
       color: #265E5E;
-      font-family: Candara, Calibri, Segoe, "Segoe UI", Optima, Arial, sans-serif;
-      text-transform: uppercase;
-      text-align: center;
-      font-size: 4.5vw;
-      line-height: calc(4.5vw * 1.05);
-      font-weight: 500; } }
+      font-size: 16px;
+      line-height: 18px;
+      font-family: Candara, Calibri, Segoe, "Segoe UI", Optima, Arial, sans-serif; } }
   @media all and (max-width: 479px) {
-    .listen-page__music-box-title {
+    .listen-page__playlist-description {
       color: #265E5E;
-      font-family: Candara, Calibri, Segoe, "Segoe UI", Optima, Arial, sans-serif;
-      text-transform: uppercase;
-      text-align: center;
-      font-size: 5.75vw;
-      line-height: calc(5.75vw * 1.05);
-      font-weight: 500; } }
-
-.listen-page__music-box {
-  display: block;
-  margin: 5% auto;
-  height: 472px; }
+      font-size: 16px;
+      line-height: 18px;
+      font-family: Candara, Calibri, Segoe, "Segoe UI", Optima, Arial, sans-serif; } }

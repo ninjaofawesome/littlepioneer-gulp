@@ -25,13 +25,13 @@
 
     @include breakpoint(mobile) {
       @include flex-grid-column(10);
-      @include TitleText($size: 6vw);
+      @include TitleText($size: 7vw);
     }
 
     @include breakpoint(iphone) {
       @include flex-grid-column(10);
 
-      @include TitleText($size: 7vw);
+      @include TitleText($size: 8vw);
     }
 
   }
@@ -67,59 +67,15 @@
 
   }
 
-  &__playlist-group-item-arrow {
-    color: $orange;
-    text-decoration: none;
-
-    &:active,
-    &:focus,
-    &:hover,
-    &:visited {
-      color: $orange;
-      text-decoration: none;
-    }
-  }
-
-  &__music-box-title {
-    @include SubtitleText($blue-green, 1.5vw);
-
-    @include breakpoint(tablet) {
-      @include SubtitleText($blue-green, 3.75vw);
-    }
+  &__playlist-description {
+    @include SubtitleTextMobile();
 
     @include breakpoint(mobile) {
-      @include SubtitleText($blue-green, 4.5vw);
+      @include BodyText();
     }
 
     @include breakpoint(iphone) {
-      @include SubtitleText($blue-green, 5.75vw);
+      @include BodyText();
     }
-  }
-
-  &__music-box {
-    display: block;
-    margin: 5% auto;
-    height: 472px;
-
-    // @include breakpoint(large){
-    //   width: 97%;
-    // }
-
-    // @include breakpoint(desktop){
-    //   width: 95%;
-    // }
-
-    // @include breakpoint(tablet){
-    //   width: 95%;
-    // }
-
-    // @include breakpoint(mobile){
-
-    //   width: 90%;
-    // }
-
-    // @include breakpoint(iphone){
-    //   width: 90%;
-    // }
   }
 }
