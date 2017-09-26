@@ -12,9 +12,13 @@
 
   &__playlist-group-item {
     @include flex-grid-column(6);
-
     display: block;
     margin: rem-calc(10) auto;
+  }
+
+  &__playlist-group-link {
+    display: block;
+    margin: rem-calc(10) auto 0 auto;
     text-align: center;
     @include TitleText($size: 3vw);
 
@@ -69,6 +73,8 @@
 
   &__playlist-description {
     @include SubtitleTextMobile();
+    text-transform: initial;
+    margin-top: 0;
 
     @include breakpoint(mobile) {
       @include BodyText();
