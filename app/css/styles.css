@@ -1026,6 +1026,21 @@ body {
   max-width: 50%;
   display: block;
   margin: 0.625rem auto; }
+  @media all and (min-width: 768px) and (max-width: 991px) {
+    .listen-page__playlist-group-item {
+      flex: 0 0 83.33333%;
+      max-width: 83.33333%;
+      max-width: 83.33333%; } }
+  @media all and (min-width: 480px) and (max-width: 767px) {
+    .listen-page__playlist-group-item {
+      flex: 0 0 83.33333%;
+      max-width: 83.33333%;
+      max-width: 83.33333%; } }
+  @media all and (max-width: 479px) {
+    .listen-page__playlist-group-item {
+      flex: 0 0 83.33333%;
+      max-width: 83.33333%;
+      max-width: 83.33333%; } }
 
 .listen-page__playlist-group-link {
   display: block;
