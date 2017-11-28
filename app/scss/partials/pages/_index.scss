@@ -26,8 +26,37 @@
     @include flex-grid-column(12);
 
     display: block;
+    margin: rem-calc(20) auto;
+    padding: rem-calc(0, 10);
+  }
+
+  &__recording-signup-tile {
+    @include flex-grid-column(4);
+
+    display: block;
     margin: rem-calc(10) auto;
     padding: rem-calc(0, 10);
+
+    @include breakpoint(tablet) {
+      @include flex-grid-column(6);
+      display: block;
+      margin: rem-calc(10) auto;
+      padding: rem-calc(0, 10);
+    }
+
+    @include breakpoint(mobile) {
+      @include flex-grid-column(10);
+      display: block;
+      margin: rem-calc(10) auto;
+      padding: rem-calc(0, 10);
+    }
+
+    @include breakpoint(iphone) {
+      @include flex-grid-column(10);
+      display: block;
+      margin: rem-calc(10) auto;
+      padding: rem-calc(0, 10);
+    }
   }
 
 
@@ -38,7 +67,7 @@
       @include TitleText($blue-green, 12vw);
     }
 
-    @include breakpoint(mobile) {
+    @include breakpoint(iphone) {
       @include TitleText($blue-green, 12vw);
     }
   }

@@ -723,8 +723,40 @@ body {
   max-width: 100%;
   max-width: 100%;
   display: block;
+  margin: 1.25rem auto;
+  padding: 0; }
+
+.index-page__recording-signup-tile {
+  flex: 0 0 33.33333%;
+  max-width: 33.33333%;
+  max-width: 33.33333%;
+  display: block;
   margin: 0.625rem auto;
   padding: 0; }
+  @media all and (min-width: 768px) and (max-width: 991px) {
+    .index-page__recording-signup-tile {
+      flex: 0 0 50%;
+      max-width: 50%;
+      max-width: 50%;
+      display: block;
+      margin: 0.625rem auto;
+      padding: 0; } }
+  @media all and (min-width: 480px) and (max-width: 767px) {
+    .index-page__recording-signup-tile {
+      flex: 0 0 83.33333%;
+      max-width: 83.33333%;
+      max-width: 83.33333%;
+      display: block;
+      margin: 0.625rem auto;
+      padding: 0; } }
+  @media all and (max-width: 479px) {
+    .index-page__recording-signup-tile {
+      flex: 0 0 83.33333%;
+      max-width: 83.33333%;
+      max-width: 83.33333%;
+      display: block;
+      margin: 0.625rem auto;
+      padding: 0; } }
 
 .index-page__recording-cta-title {
   color: #265E5E;
@@ -743,7 +775,7 @@ body {
       font-size: 12vw;
       line-height: calc(12vw * 0.785);
       font-weight: 400; } }
-  @media all and (min-width: 480px) and (max-width: 767px) {
+  @media all and (max-width: 479px) {
     .index-page__recording-cta-title {
       color: #265E5E;
       font-family: "street_credregular", "Arial Black", "Arial Bold", sans-serif;
