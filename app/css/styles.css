@@ -726,6 +726,14 @@ body {
   margin: 1.25rem auto;
   padding: 0; }
 
+.index-page__recording-signup-form-type {
+  flex: 0 0 83.33333%;
+  max-width: 83.33333%;
+  max-width: 83.33333%;
+  display: block;
+  margin: 0.625rem auto;
+  padding: 0; }
+
 .index-page__recording-signup-tile {
   flex: 0 0 33.33333%;
   max-width: 33.33333%;
